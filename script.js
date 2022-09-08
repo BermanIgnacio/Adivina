@@ -22,9 +22,7 @@ const events = ()=>{
                     $("#try").text(`Intentos: ${trys}`)
                     if(trys == 0)
                         $("#result").text("Lastima, Perdiste!");
-                }
-
-                    
+                }   
             }  
     });
     //evento boton ayuda
@@ -33,7 +31,6 @@ const events = ()=>{
             help--;
             $("#input_3").val() < random ? $("#help").text("El número es mayor") : $("#help").text("El número es menor");
         }
-
     });
     //evento boton reiniciar
     $("#button_4").click(function (){
@@ -41,9 +38,8 @@ const events = ()=>{
     });
 }
 
-let bool = false;
-let trys = 3; 
-let help = 1;
+let bool = false; 
+let trys = 3;  //Cantidad de Intentos
+let help = 1; //Cantindad de Ayudas
 let random = parseInt(Math.random() * 250);
-console.log(random)
 events();

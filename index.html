@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>¡Adivina!</title>
+</head>
+<body>
+    <main class="display">
+        <div class="display">
+            <label id="label_1" class="fonts">Ingrese rango de valores (Opcional)</label>
+            <div>
+                <input id="input_1" type="number" size="6" placeholder="0">
+                <input id="input_2" type="number" size="6" placeholder="0">
+            </div>
+            <button id="button_1" class="fonts"> Generar</button>
+            <span id="warning"></span>
+        </div>
+        <div class="container display">
+            <label id="label_2" class="fonts">Ingrese un Número</label>
+            <input id="input_3" type="text" size="15">
+            <button id="button_2" class="fonts">Adivinar</button>
+        </div>
+        <div class="container display">
+            <p id="try" class="fonts">Intentos: 3</p>
+            <button id="button_3" class="fonts">Ayuda</button>
+            <span id="help" class="fonts"></span>
+        </div>
+        <div class="container display">
+            <span id="result" class="fonts"></span>
+            <button id="button_4" class="fonts">Reintentar</button>
+        </div>
+    </main>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
